@@ -170,6 +170,15 @@ The "coprocessor" approach: verifiable AI model execution on-chain.
 | [awesome-robotics](https://github.com/edwardtay/awesome-robotics) | Robotics frameworks, simulators, and platforms. |
 | [awesome-OSINT](https://github.com/edwardtay/awesome-OSINT) | OSINT tools: people search, domains, social media, geolocation, breach data. |
 
+## Browse the list locally
+
+`examples/list_tools.py` prints every linked tool in this README, optionally filtered by section:
+
+```bash
+python examples/list_tools.py
+python examples/list_tools.py --section "DeFi AI Tools"
+```
+
 ## Contributing
 
 Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
