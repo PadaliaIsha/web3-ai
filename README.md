@@ -2,10 +2,10 @@
 
 # Awesome Web3 AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Stars](https://img.shields.io/github/actions/workflow/status/edwardtay/awesome-web3-ai/update-stars.yml?label=star%20updates)](https://github.com/edwardtay/awesome-web3-ai/actions/workflows/update-stars.yml)
-[![Links](https://img.shields.io/github/actions/workflow/status/edwardtay/awesome-web3-ai/links.yml?label=links)](https://github.com/edwardtay/awesome-web3-ai/actions/workflows/links.yml)
-[![Last Commit](https://img.shields.io/github/last-commit/edwardtay/awesome-web3-ai)](https://github.com/edwardtay/awesome-web3-ai/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/edwardtay/awesome-web3-ai/pulls)
+[![Stars](https://img.shields.io/github/actions/workflow/status/PadaliaIsha/web3-ai/update-stars.yml?label=star%20updates)](https://github.com/PadaliaIsha/web3-ai/actions/workflows/update-stars.yml)
+[![Links](https://img.shields.io/github/actions/workflow/status/PadaliaIsha/web3-ai/links.yml?label=links)](https://github.com/PadaliaIsha/web3-ai/actions/workflows/links.yml)
+[![Last Commit](https://img.shields.io/github/last-commit/PadaliaIsha/web3-ai)](https://github.com/PadaliaIsha/web3-ai/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/PadaliaIsha/web3-ai/pulls)
 [![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](LICENSE)
 
 > A curated list of Web3 AI tools, agent frameworks, protocols, infrastructure, and data resources.
@@ -177,6 +177,7 @@ The "coprocessor" approach: verifiable AI model execution on-chain.
 ```bash
 python examples/list_tools.py
 python examples/list_tools.py --section "DeFi AI Tools"
+python examples/list_tools.py --json
 ```
 
 ## Contributing

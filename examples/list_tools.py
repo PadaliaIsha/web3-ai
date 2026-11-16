@@ -4,11 +4,13 @@
 Usage:
     python examples/list_tools.py
     python examples/list_tools.py --section "DeFi AI Tools"
+    python examples/list_tools.py --json
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from pathlib import Path
 
@@ -51,23 +53,33 @@ def main() -> None:
         "--section",
         help="Only print tools whose section title contains this text (case-insensitive).",
     )
+    parser.add_argument("--json", action="store_true", help="Print the result as JSON.")
     args = parser.parse_args()
 
     catalog = parse_catalog(README.read_text(encoding="utf-8"))
     needle = (args.section or "").casefold()
+    selected = {
+        title: tools
+        for title, tools in catalog.items()
+        if not needle or needle in title.casefold()
+    }
 
-    shown = 0
-    for title, tools in catalog.items():
-        if needle and needle not in title.casefold():
-            continue
+    if not selected:
+        raise SystemExit("No matching tools found.")
+
+    if args.json:
+        payload = {
+            title: [{"name": name, "url": url} for name, url in tools]
+            for title, tools in selected.items()
+        }
+        print(json.dumps(payload, indent=2, ensure_ascii=False))
+        return
+
+    for title, tools in selected.items():
         print(title)
         for name, url in tools:
             print(f"  - {name}: {url}")
         print()
-        shown += len(tools)
-
-    if shown == 0:
-        raise SystemExit("No matching tools found.")
 
 
 if __name__ == "__main__":

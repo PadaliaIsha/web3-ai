@@ -1,0 +1,35 @@
+name: Examples
+
+on:
+  push:
+    paths:
+      - README.md
+      - examples/**
+      - .github/workflows/examples.yml
+  pull_request:
+    paths:
+      - README.md
+      - examples/**
+      - .github/workflows/examples.yml
+
+permissions:
+  contents: read
+
+jobs:
+  list-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: List all tools
+        run: python examples/list_tools.py
+
+      - name: Filter by section
+        run: python examples/list_tools.py --section "DeFi AI Tools"
+
+      - name: JSON output is valid
+        run: python examples/list_tools.py --json | python -m json.tool > /dev/null
