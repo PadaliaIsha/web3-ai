@@ -40,10 +40,10 @@
 | [AgentKit](https://github.com/coinbase/agentkit) | 1k | Python | Coinbase toolkit for on-chain AI agents. |
 | [GOAT](https://github.com/goat-sdk/goat) | 1k | TypeScript | Connect AI agents to any on-chain tool. |
 | [Hashgraph Online (HOL)](https://github.com/hashgraph-online/standards-sdk) | 1k | TypeScript | Universal agent registry with UAIDs, peer-to-peer messaging and bridges to A2A and ERC-8004. |
-| [Heurist](https://github.com/heurist-network/heurist-agent-framework) | 828 | Python | Agent framework for AI model hosting and inference. |
-| [Daydreams](https://github.com/daydreamsai/daydreams) | 624 | TypeScript | Agent framework for on-chain games and autonomous worlds. |
-| [ZerePy](https://github.com/blorm-network/ZerePy) | 576 | Python | Python framework for deploying crypto AI agents. ⚠️ |
-| [Open Autonomy](https://github.com/valory-xyz/open-autonomy) | 137 | Python | Autonomous agent services framework (Autonolas). |
+| [Heurist](https://github.com/heurist-network/heurist-agent-framework) | 827 | Python | Agent framework for AI model hosting and inference. |
+| [Daydreams](https://github.com/daydreamsai/daydreams) | 628 | TypeScript | Agent framework for on-chain games and autonomous worlds. |
+| [ZerePy](https://github.com/blorm-network/ZerePy) | 575 | Python | Python framework for deploying crypto AI agents. ⚠️ |
+| [Open Autonomy](https://github.com/valory-xyz/open-autonomy) | 135 | Python | Autonomous agent services framework (Autonolas). |
 | [GAME](https://github.com/game-by-virtuals/game-python) | 100 | Python | Virtuals Protocol SDK for AI game agents. ⚠️ |
 | [Sentience](https://github.com/galadriel-ai/Sentience) | 68 | TypeScript | Verifiable on-chain AI agents by Galadriel. ⚠️ |
 
